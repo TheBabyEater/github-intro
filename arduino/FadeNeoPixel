@@ -1,25 +1,25 @@
-#include <Adafruit_NeoPixel.h>
+#include <Adafruit_NeoPixel.h>  //adds in that file, some things need that
 
-#define PIN 6
+#define PIN 6 
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(12, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(12, PIN, NEO_GRB + NEO_KHZ800);   //declares the device that yourr using
 
-int pulseDuration = 50;
+int pulseDuration = 50;  //length of the pulse
 
-int pulseBrightness = 255;
+int pulseBrightness = 255;  //how bright it gets
 
-uint32_t darkBlue = strip.Color(9, 75, 108);
-uint32_t lightBlue = strip.Color(65, 195, 255); 
-uint32_t greyBlue = strip.Color(16, 129, 193); 
-uint32_t blueGrey = strip.Color(75, 99, 107);
+uint32_t darkBlue = strip.Color(9, 75, 108);   //what the first color looks like
+uint32_t lightBlue = strip.Color(65, 195, 255);    //what the 2nt color looks like
+uint32_t greyBlue = strip.Color(16, 129, 193);    //what the 3rd color looks like
+uint32_t blueGrey = strip.Color(75, 99, 107);    //what the 4th color looks like
 
 
-void setup() {
-  strip.begin();
-  strip.show(); 
+void setup() {  //stating the setup for whats going to happen
+  strip.begin();   //states the begining
+  strip.show();    //states that the strips will show something
   }
 
-void loop() {
+void loop() {    //makes it loop actions
 
 
 for (int j = 0; j <= 12; j++) {
