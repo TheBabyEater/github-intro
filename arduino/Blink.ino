@@ -1,5 +1,5 @@
 
-int led = 13;
+int led = 13; //13 is wack yo, you might want to change it
 
 void setup() {                
 
